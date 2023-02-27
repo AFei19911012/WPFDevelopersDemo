@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="WPFDevelopersDemo.Demos.SpotLight_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:wpfdev="https://github.com/WPFDevelopersOrg/WPFDevelopers"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UniformGrid Rows="2">
+        <wpfdev:SpotLight FontSize="50" Text="YanJinHua" DefaultForeground="Crimson" Foreground="Fuchsia" Duration="00:00:05" />
+        <wpfdev:SpotLight/>
+    </UniformGrid>
+</UserControl>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDevelopersDemo", "WPFDevelopersDemo.csproj", "{30F818F3-5AEA-456D-AB03-807FEE4B3032}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GalaSoft.MvvmLight", "..\GalaSoft.MvvmLight\GalaSoft.MvvmLight.shproj", "{E0D724F3-A34B-4ADF-A582-139C4E4AB3CA}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\GalaSoft.MvvmLight\GalaSoft.MvvmLight.projitems*{30f818f3-5aea-456d-ab03-807fee4b3032}*SharedItemsImports = 4
+		..\GalaSoft.MvvmLight\GalaSoft.MvvmLight.projitems*{e0d724f3-a34b-4adf-a582-139c4e4ab3ca}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30F818F3-5AEA-456D-AB03-807FEE4B3032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F818F3-5AEA-456D-AB03-807FEE4B3032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F818F3-5AEA-456D-AB03-807FEE4B3032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F818F3-5AEA-456D-AB03-807FEE4B3032}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3A40824-5F2A-48E1-B50E-DCB0BF16374A}
+	EndGlobalSection
+EndGlobal

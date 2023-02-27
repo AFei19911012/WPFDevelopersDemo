@@ -1,32 +1,20 @@
-# Prerequisites
-*.d
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+/src/WPFDevelopers/bin
+/src/WPFDevelopers/obj
+/src/WPFDevelopers.Samples/publish
+/src/WPFDevelopers.Samples/WPFDevelopers.Samples_TemporaryKey.pfx
+/src/WPFDevelopers.Samples/bin
+/src/WPFDevelopers.Samples/obj
+/src/.vs
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
+/OutPut
+/OutPut/WPFDevelopers.pdb
+/OutPut/WPFDevelopers.Samples.pdb
+/src/Microsoft.Windows.Shell/obj
+/OutPut/*.pdb
+/src/packages
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+*.pdb

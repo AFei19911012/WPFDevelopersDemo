@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="WPFDevelopersDemo.Demos.ScreenCut_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFDevelopersDemo.Demos"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UniformGrid Rows="2">
+        <CheckBox Content="截图时隐藏当前窗口" 
+                  VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                  IsChecked="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:ScreenCut_Demo}}, Path=IsChecked}"/>
+        <Button Content="截屏" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Button_Click" Margin="0,10"/>
+    </UniformGrid>
+</UserControl>

@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30F818F3-5AEA-456D-AB03-807FEE4B3032}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WPFDevelopersDemo</RootNamespace>
+    <AssemblyName>WPFDevelopersDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resource\WPFDevelopers.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HandyControl">
+      <HintPath>..\Dlls\HandyControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.AvalonEdit, Version=6.2.0.78, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
+      <HintPath>packages\AvalonEdit.6.2.0.78\lib\net462\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Maps.MapControl.WPF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Maps.MapControl.WPF.1.0.0.3\lib\net40-Client\Microsoft.Maps.MapControl.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFDevelopers, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WPFDevelopers.1.1.0.1-preview\lib\net47\WPFDevelopers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Demos\AMap_Demo.xaml.cs">
+      <DependentUpon>AMap_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\AnimationAudio_Demo.xaml.cs">
+      <DependentUpon>AnimationAudio_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\BasicControls_Demo.xaml.cs">
+      <DependentUpon>BasicControls_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\BreatheLight_Demo.xaml.cs">
+      <DependentUpon>BreatheLight_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\CarouselEx_Demo.xaml.cs">
+      <DependentUpon>CarouselEx_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Carousel_Demo.xaml.cs">
+      <DependentUpon>Carousel_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\ChatEmoji_Demo.xaml.cs">
+      <DependentUpon>ChatEmoji_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\CircularMenu_Demo.xaml.cs">
+      <DependentUpon>CircularMenu_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\CutImage_Demo.xaml.cs">
+      <DependentUpon>CutImage_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Dashboard_Demo.xaml.cs">
+      <DependentUpon>Dashboard_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\DrawerMenu_Demo.xaml.cs">
+      <DependentUpon>DrawerMenu_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\EdgeLight_Demo.xaml.cs">
+      <DependentUpon>EdgeLight_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MultiSelectComboBox_Demo.xaml.cs">
+      <DependentUpon>MultiSelectComboBox_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Pages\EdgePage.xaml.cs">
+      <DependentUpon>EdgePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Pagination_Demo.xaml.cs">
+      <DependentUpon>Pagination_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\PieControl_Demo.xaml.cs">
+      <DependentUpon>PieControl_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\ProgressBar_Demo.xaml.cs">
+      <DependentUpon>ProgressBar_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\RainbowAppleButton_Demo.xaml.cs">
+      <DependentUpon>RainbowAppleButton_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\RoundPicker_Demo.xaml.cs">
+      <DependentUpon>RoundPicker_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\ScreenCut_Demo.xaml.cs">
+      <DependentUpon>ScreenCut_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Shake_Demo.xaml.cs">
+      <DependentUpon>Shake_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\SnowCanvas_Demo.xaml.cs">
+      <DependentUpon>SnowCanvas_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\SpotLight_Demo.xaml.cs">
+      <DependentUpon>SpotLight_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Step_Demo.xaml.cs">
+      <DependentUpon>Step_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\ThumbAngle_Demo.xaml.cs">
+      <DependentUpon>ThumbAngle_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\TimeLine_Demo.xaml.cs">
+      <DependentUpon>TimeLine_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\TransitionPanel_Demo.xaml.cs">
+      <DependentUpon>TransitionPanel_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\VerifyCode_Demo.xaml.cs">
+      <DependentUpon>VerifyCode_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ElementVisualTreeHelper.cs" />
+    <Compile Include="Demos\Navigation3D_Demo.xaml.cs">
+      <DependentUpon>Navigation3D_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\PanningItems_Demo.xaml.cs">
+      <DependentUpon>PanningItems_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Loading_Demo.xaml.cs">
+      <DependentUpon>Loading_Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Views\AboutWPFDevelopers.xaml.cs">
+      <DependentUpon>AboutWPFDevelopers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Windows\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\RelayCommand.cs" />
+    <Compile Include="Model\AMapTitleLayer.cs" />
+    <Compile Include="Model\DemoDataModel.cs" />
+    <Compile Include="Model\EnumMenu.cs" />
+    <Compile Include="ViewModel\BasicControlsVM.cs" />
+    <Compile Include="ViewModel\CircularMenuVM.cs" />
+    <Compile Include="ViewModel\MainWindowVM.cs" />
+    <Compile Include="ViewModel\PaginationVM.cs" />
+    <Compile Include="ViewModel\PieControlVM.cs" />
+    <Page Include="Demos\AMap_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\AnimationAudio_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\BasicControls_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\BreatheLight_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\CarouselEx_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Carousel_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\ChatEmoji_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\CircularMenu_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\CutImage_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Dashboard_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\DrawerMenu_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\EdgeLight_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\MultiSelectComboBox_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Navigation3D_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Pages\EdgePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Pagination_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\PanningItems_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Loading_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\PieControl_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\ProgressBar_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\RainbowAppleButton_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\RoundPicker_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\ScreenCut_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Shake_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\SnowCanvas_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\SpotLight_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Step_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\ThumbAngle_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\TimeLine_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\TransitionPanel_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\VerifyCode_Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Views\AboutWPFDevelopers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demos\Windows\AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resource\Style\Brush.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resource\Style\Style.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Resource\Fonts\fixedsys.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resource\Image\AMap\Car2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Image\AnimationNavigationBar3D\background.png" />
+    <Resource Include="Resource\Image\Breathe\0.jpg" />
+    <Resource Include="Resource\Image\Breathe\1.jpg" />
+    <Resource Include="Resource\Image\Breathe\2.jpg" />
+    <Resource Include="Resource\Image\Chat\Left.jpg" />
+    <Resource Include="Resource\Image\Chat\Right.jpg" />
+    <Resource Include="Resource\Image\Chat\UserImages\jingtao.png" />
+    <Resource Include="Resource\Image\Chat\UserImages\yanjinhua.png" />
+    <Resource Include="Resource\Image\CircularMenu\1.png" />
+    <Resource Include="Resource\Image\CircularMenu\2.png" />
+    <Resource Include="Resource\Image\CircularMenu\3.png" />
+    <Resource Include="Resource\Image\CircularMenu\4.png" />
+    <Resource Include="Resource\Image\CircularMenu\5.png" />
+    <Resource Include="Resource\Image\CircularMenu\6.png" />
+    <Resource Include="Resource\Image\CircularMenu\7.png" />
+    <Resource Include="Resource\Image\CircularMenu\8.png" />
+    <Resource Include="Resource\Image\Craouse\0.jpg" />
+    <Resource Include="Resource\Image\Craouse\1.jpg" />
+    <Resource Include="Resource\Image\Craouse\2.jpg" />
+    <Resource Include="Resource\Image\Craouse\3.jpg" />
+    <Resource Include="Resource\Image\Craouse\4.jpg" />
+    <Resource Include="Resource\Image\Crop\0.jpg" />
+    <Resource Include="Resource\Image\Passwrod\Eye_50px.png" />
+    <Resource Include="Resource\Image\Passwrod\Invisible_50px.png" />
+    <Resource Include="Resource\Image\Passwrod\Lock_48px.png" />
+    <Resource Include="Resource\Image\RoundMenu\Close.png" />
+    <Resource Include="Resource\Image\RoundMenu\Color.png" />
+    <Resource Include="Resource\Image\RoundMenu\Eraser.png" />
+    <Resource Include="Resource\Image\RoundMenu\Pen.png" />
+    <Resource Include="Resource\Image\RoundMenu\Revoke.png" />
+    <Resource Include="Resource\Image\Snow\SnowTree.png" />
+    <Resource Include="Resource\Image\SpeedRockets\飞机.png" />
+    <Resource Include="Resource\Image\ZooSemy\0.png" />
+    <Resource Include="Resource\Image\ZooSemy\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\Audio\HelloWPFDevelopes_en.mp3" />
+    <Content Include="Resource\Audio\HelloWPFDevelopes_zh.mp3" />
+    <Resource Include="Resource\Image\LeftMainContent\A.png" />
+    <Resource Include="Resource\Image\LeftMainContent\B.png" />
+    <Resource Include="Resource\Image\LeftMainContent\C.png" />
+    <Resource Include="Resource\Image\LeftMainContent\D.png" />
+    <Resource Include="Resource\Image\LeftMainContent\E.png" />
+    <Resource Include="Resource\Image\LeftMainContent\F.png" />
+    <Resource Include="Resource\Image\LeftMainContent\G.png" />
+    <Resource Include="Resource\Image\LeftMainContent\H.png" />
+    <Resource Include="Resource\Image\LeftMainContent\I.png" />
+    <Resource Include="Resource\Image\LeftMainContent\icon.ico" />
+    <Resource Include="Resource\Image\LeftMainContent\J.png" />
+    <Resource Include="Resource\Image\LeftMainContent\K.png" />
+    <Resource Include="Resource\Image\LeftMainContent\L.png" />
+    <Resource Include="Resource\Image\LeftMainContent\M.png" />
+    <Resource Include="Resource\Image\LeftMainContent\N.png" />
+    <Resource Include="Resource\Image\LeftMainContent\O.png" />
+    <Resource Include="Resource\Image\LeftMainContent\P.png" />
+    <Resource Include="Resource\Image\LeftMainContent\Q.png" />
+    <Resource Include="Resource\Image\LeftMainContent\R.png" />
+    <Resource Include="Resource\Image\LeftMainContent\S.png" />
+    <Resource Include="Resource\Image\LeftMainContent\T.png" />
+    <Resource Include="Resource\Image\LeftMainContent\U.png" />
+    <Resource Include="Resource\Image\LeftMainContent\V.png" />
+    <Resource Include="Resource\Image\LeftMainContent\W.png" />
+    <Resource Include="Resource\Image\LeftMainContent\X.png" />
+    <Resource Include="Resource\Image\LeftMainContent\Y.png" />
+    <Resource Include="Resource\Image\LeftMainContent\Z.png" />
+    <Resource Include="Resource\Image\SortAscending_gray_16x.png" />
+    <Resource Include="Resource\WPFDevelopers.ico" />
+    <Resource Include="Resource\emoji\发烧.png" />
+    <Resource Include="Resource\emoji\大笑.png" />
+    <Resource Include="Resource\emoji\得意.png" />
+    <Resource Include="Resource\emoji\思考.png" />
+    <Resource Include="Resource\emoji\生病.png" />
+    <Resource Include="Resource\emoji\破涕为笑.png" />
+    <Resource Include="Resource\WPFDevelopers.png" />
+  </ItemGroup>
+  <Import Project="..\GalaSoft.MvvmLight\GalaSoft.MvvmLight.projitems" Label="Shared" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

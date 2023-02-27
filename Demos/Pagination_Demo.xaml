@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="WPFDevelopersDemo.Demos.Pagination_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:wpfdev="https://github.com/WPFDevelopersOrg/WPFDevelopers" 
+             xmlns:vm="clr-namespace:WPFDevelopersDemo.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <vm:PaginationVM/>
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="正常模式分页" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="2" Text="精简模式分页" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <ListBox Grid.Row="1" Grid.Column="0" ItemsSource="{Binding ListPagination}" Margin="10,0,0,0"/>
+        <ListBox Grid.Row="1" Grid.Column="2" ItemsSource="{Binding ListPagination}" Margin="0,0,10,0"/>
+
+        <wpfdev:Pagination Grid.Row="2" Grid.Column="0" IsLite="False" Margin="10,0,0,0"
+                           Count="{Binding Count}" CountPerPage="{Binding CountPerPage}" Current="{Binding Current}"/>
+
+        <wpfdev:Pagination Grid.Row="2" Grid.Column="1" IsLite="true"  Margin="0,0,10,0"
+                           Count="{Binding Count}" CountPerPage="{Binding CountPerPage}" Current="{Binding Current}"/>
+    </Grid>
+</UserControl>

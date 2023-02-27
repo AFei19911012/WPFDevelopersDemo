@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFDevelopersDemo.Demos.Windows.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:ws="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:view="clr-namespace:WPFDevelopersDemo.Demos.Views"
+        mc:Ignorable="d" 
+        WindowStartupLocation="CenterScreen"
+        SnapsToDevicePixels="True" 
+        TextOptions.TextFormattingMode="Display"
+        ResizeMode="NoResize" 
+        Height="400" Width="300" 
+        Background="{DynamicResource BackgroundSolidColorBrush}"
+        Title="关于" >
+    <ws:WindowChrome.WindowChrome>
+        <ws:WindowChrome  GlassFrameThickness="1"  CaptionHeight="160" />
+    </ws:WindowChrome.WindowChrome>
+    <Grid>
+        <view:AboutWPFDevelopers/>
+        <Button x:Name="CloseButton" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"
+                Style="{StaticResource WindowButtonStyle}" ToolTip="关闭" ws:WindowChrome.IsHitTestVisibleInChrome="True"
+                Click="CloseButton_Click">
+            <Path Data="{StaticResource PathMetroWindowClose}" Fill="{DynamicResource WindowForegroundColorBrush}"
+                  Height="10" Width="10" Stretch="UniformToFill"/>
+        </Button>
+    </Grid>
+</Window>
